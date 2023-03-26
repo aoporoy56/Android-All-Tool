@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".feedBack">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="30dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FeedBack"
+            android:textSize="50dp"
+            android:gravity="center"
+            android:textColor="#BBB6A5"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginVertical="5dp"
+            android:hint="Enter Subject"
+            android:paddingHorizontal="10dp"
+            android:inputType="text"
+            android:id="@+id/inputSubject"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginVertical="5dp"
+            android:hint="Enter Massage"
+            android:paddingHorizontal="10dp"
+            android:inputType="text"
+            android:id="@+id/inputMassage"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="30dp"
+            android:gravity="center">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="10dp"
+                android:text="Feedback"
+                android:drawableLeft="@drawable/ic_login"
+                android:drawablePadding="10dp"
+                android:background="#8C8C9C"
+                android:textAllCaps="false"
+                android:id="@+id/feedBack"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="Reset"
+                android:drawableLeft="@drawable/ic_clear"
+                android:drawablePadding="10dp"
+                android:background="#8C8C9C"
+                android:textAllCaps="false"
+                android:id="@+id/reset"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
